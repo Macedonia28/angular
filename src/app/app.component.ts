@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Usuario } from './model/Usuario';
+
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,29 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'tabla';
+
+
+  public listaUsuarios:Usuario[]=[];
+
+  constructor(){
+    let usuarios:Usuario=new Usuario();
+    usuarios.nombre='alejandro';
+    usuarios.apellido='quiceno';
+    usuarios.edad='25';
+    usuarios.estado=true;
+    this.addFirstElement(usuarios);
+    
+   
+
+  }
+
+  
+
+
+public addFirstElement(usuario:Usuario):void{
+this.listaUsuarios.unshift(usuario);
 }
+
+  }
+
+

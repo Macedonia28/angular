@@ -15,10 +15,10 @@ export class AppComponent {
   constructor(){
     let usuarios:Usuario=new Usuario();
         usuarios.id='1';
-        usuarios.userName='alejandro';
+        usuarios.userName='magno';
         usuarios.password='0328'
-        usuarios.name='magno';
-        usuarios.email='alejandro'
+        usuarios.name='alejandro';
+        usuarios.email='alejandro@gmail.com'
     this.addFirstElement(usuarios);
     
    

@@ -14,14 +14,20 @@ export class AppComponent {
 
   constructor(){
     let usuarios:Usuario=new Usuario();
+    let usuarios1:Usuario=new Usuario()
         usuarios.id='1';
         usuarios.userName='magno';
         usuarios.password='0328'
         usuarios.name='alejandro';
         usuarios.email='alejandro@gmail.com'
-    this.addFirstElement(usuarios);
+        usuarios1.id='2';
+        usuarios1.userName='princesa';
+        usuarios1.password='123'
+        usuarios1.name='susana';
+        usuarios1.email='susana@gmail.com'
+        this.addFirstElement(usuarios1);
+       this.addFirstElement(usuarios);
     
-   
 
   }
 
@@ -31,6 +37,7 @@ export class AppComponent {
 public addFirstElement(usuario:Usuario):void{
 this.listaUsuarios.unshift(usuario);
 }
+
 
   }
 

@@ -28,7 +28,7 @@
            <th>
              id
            </th>
-           <th>
+             <th>
              username
            </th>
            <th>
@@ -41,13 +41,16 @@
              email
            </th>
         </tr>
-        <tr>
-          <td *ngFor="let u of  listaUsuarios">{{u.id}}</td>
-          <td *ngFor="let u of  listaUsuarios">{{u.userName}}</td>
-          <td *ngFor="let u of  listaUsuarios">{{u.password}}</td>
-          <td *ngFor="let u of  listaUsuarios">{{u.name}}</td>
-          <td *ngFor="let u of  listaUsuarios">{{u.email}}</td>
+        <tr *ngFor="let u of  listaUsuarios">
+          <td>{{u.id}}</td>
+          <td>{{u.userName}}</td>
+          <td>{{u.password}}</td>
+          <td>{{u.name}}</td>
+          <td>{{u.email}}</td>
+     
         </tr>
+
+     
       
       </table>
      

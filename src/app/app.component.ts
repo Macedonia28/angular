@@ -14,10 +14,11 @@ export class AppComponent {
 
   constructor(){
     let usuarios:Usuario=new Usuario();
-    usuarios.nombre='alejandro';
-    usuarios.apellido='quiceno';
-    usuarios.edad='25';
-    usuarios.estado=true;
+        usuarios.id='1';
+        usuarios.userName='alejandro';
+        usuarios.password='0328'
+        usuarios.name='magno';
+        usuarios.email='alejandro'
     this.addFirstElement(usuarios);
     
    

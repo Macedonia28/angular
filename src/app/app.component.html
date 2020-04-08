@@ -6,8 +6,54 @@
 <!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
 <!-- * * * * * * * to get started with your project! * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<div>
-  <p *ngFor="let u of listaUsuarios">
-  {{u.nombre}}
-  </p>
-</div>
+<!Doctype html>
+<html>
+<head>
+
+</head>
+<style type="text/css">
+  table,th,td{
+    border:1px solid black;
+    border-collapse:collapse;
+  }
+  </style>
+  <body>
+   
+      
+    
+    <h1>ejercicio con tablas</h1>
+   
+      <table>
+        <tr>
+           <th>
+             id
+           </th>
+           <th>
+             username
+           </th>
+           <th>
+             password
+           </th>
+           <th>
+             name
+           </th>
+           <th>
+             email
+           </th>
+        </tr>
+        <tr>
+          <td *ngFor="let u of  listaUsuarios">{{u.id}}</td>
+          <td *ngFor="let u of  listaUsuarios">{{u.userName}}</td>
+          <td *ngFor="let u of  listaUsuarios">{{u.password}}</td>
+          <td *ngFor="let u of  listaUsuarios">{{u.email}}</td>
+        </tr>
+      
+      </table>
+     
+  </body>
+
+
+</html>
+
+
+

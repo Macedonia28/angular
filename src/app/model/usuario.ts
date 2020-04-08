@@ -1,7 +1,9 @@
 export class Usuario{
 
-    public nombre:string;
-    public apellido:string;
-    public edad:string;
-    public estado:boolean;
+    public id:string;
+    public userName:string;
+    public password:string;
+    public name:string;
+    public email:string;
+
 }
